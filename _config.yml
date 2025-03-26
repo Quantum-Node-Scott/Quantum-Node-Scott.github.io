@@ -18,10 +18,10 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Quantum-Node"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title_separator          : "|"
+subtitle                 : "Slow and Steady wins the race"
 name                     : "Scott"
-description              : "Slow and Steady wins the race"
+description              : "Blog to archive my small steps"
 url                      : "https://Quantum-Node-Scott.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,9 +109,9 @@ analytics:
 author:
   name             : "Scott"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Slow and Steady wins the race with AI"
+  bio              : "Blog to archive my small steps"
   location         : "Quantum Space"
-  email            :
+  email            : "web3scott@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
