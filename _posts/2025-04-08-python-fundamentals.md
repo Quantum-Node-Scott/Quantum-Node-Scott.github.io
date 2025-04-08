@@ -9,7 +9,7 @@ author_profile: false
 # 🐍 Mastering Python Fundamentals: A Beginner’s Guide to AI Coding
 
 **Hello again**, this is my third AI blog post.
-This week, with tutor **Devman, I learnt PythonPython🔥
+This week, with tutor **Devman**, I learnt PythonPython🔥
 
 ![Python Fundamentals](/assets/images/python_fundamentals.jpg)
 
