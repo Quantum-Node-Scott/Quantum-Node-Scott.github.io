@@ -9,10 +9,20 @@ author_profile: false
 # 🐍 Mastering Python Fundamentals: A Beginner’s Guide to AI Coding
 
 **Hello again**, this is my third AI blog post.
+This week, with tutor **Devman, I learnt PythonPython🔥
 
-![Python Fundamentals](/assets/images/python_fundamentals.png)
+![Python Fundamentals](/assets/images/python_fundamentals.jpg)
 
 ## 💡 Why Python?
+Python is not just for AI — it’s great for beginners too!  
+You can use Python to:
+
+- Build simple calculators  
+- Organize files on your computer  
+- Automate boring tasks (like renaming files)  
+- Make your own web scraper  
+- Or even create fun mini-games with turtle graphics!  
+
 Python is the most popular language in AI and computer science.  
 It’s beginner-friendly, readable, and powerful — perfect for learning how to code smart machines.
 
@@ -32,11 +42,11 @@ pi = 3.14
 complex_num = 2 + 3j
 
 # Text and collections
-name = "ChatGPT"
+name = "Scott"
 fruits = ["apple", "banana"]
 coordinates = (4.5, 7.2)
 unique_ids = {101, 102, 103}
-user = {"name": "Alice", "age": 30}
+user = {"name": "Scott", "age": 32}
 ```
 
 > **Tip:** For AI, `NumPy` arrays are better for math than normal Python lists.
@@ -148,7 +158,39 @@ print(dry_days.mean())  # Temp: 22.5, Humidity: 45
 
 ---
 
-## 📈 7. Matplotlib: Show Your Results Visually
+## 🌐 7. Web Crawling with ChromeDriver
+
+You can also use Python to **get data from websites**.  
+Here’s a basic example using `selenium` and ChromeDriver:
+
+```python
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
+
+# Set up the browser
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.get("https://example.com")
+
+# Get the title of the page
+print(driver.title)
+
+# Get all paragraph texts
+paragraphs = driver.find_elements(By.TAG_NAME, "p")
+for p in paragraphs:
+    print(p.text)
+
+driver.quit()
+```
+
+> 📌 Tip: You need to install `selenium`:
+> ```bash
+> pip install selenium
+> ```
+
+---
+## 📈 8. Matplotlib: Show Your Results Visually
 
 ```python
 import matplotlib.pyplot as plt
@@ -166,3 +208,7 @@ plt.show()
 ```
 
 > Try `Seaborn` too if you want beautiful charts like heatmaps.
+
+---
+
+## 🎯 With Python, you can analyze any type for AI
