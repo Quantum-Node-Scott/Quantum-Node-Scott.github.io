@@ -26,7 +26,7 @@ In this post, I’ll walk you through core statistical concepts that are vital f
 
 ---
 
-## 🧱 1. Day 1: Basic Probability and Counting Methods
+## 🧱 1. Basic Probability and Counting Methods
 
 ### 1.1 The Basics of Statistics
 
@@ -63,7 +63,7 @@ print("Product Rule Total Combinations:", total_combinations)
 
 ---
 
-## 🧩 2. Day 2: Permutation and Combination
+## 🧩 2. Permutation and Combination
 
 ### 2.1 Permutations: Arrangements Matter
 
@@ -110,7 +110,7 @@ print("Combinations:", combinations)
 
 ---
 
-## 🧠 3. Day 3: Estimation and Hypothesis Testing
+## 🧠 3. Estimation and Hypothesis Testing
 
 ### 3.1 Estimation: Making Predictions
 
@@ -168,7 +168,7 @@ print(f"t-statistic: {t_stat}, p-value: {p_value}")
 
 ---
 
-## 🏗️ 4. Day 4: Logistic Regression for Binary Classification
+## 🏗️ 4. Logistic Regression for Binary Classification
 
 ### 4.1 Binary Classification Overview
 
