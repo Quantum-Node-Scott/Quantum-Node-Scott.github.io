@@ -11,7 +11,7 @@ author_profile: false
 **Hello again**, welcome to my first AI blog post on statistics!  
 This week, I learned foundational concepts in statistics with tutor **Oh Youngseok**, which are essential for analyzing and processing data in AI and machine learning projects.
 
-![Statistics Fundamentals](/assets/images/statistics_fundamentals.jpg)
+![Statistics Fundamentals](/assets/images/statistics_fundamentals.png)
 
 ## 💡 Why Statistics in AI?
 

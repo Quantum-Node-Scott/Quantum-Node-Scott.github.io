@@ -11,7 +11,7 @@ author_profile: false
 **Hello again**, this is my third AI blog post.
 This week, with tutor **Devman**, I learnt PythonPython🔥
 
-![Python Fundamentals](/assets/images/python_fundamentals.jpg)
+![Python Fundamentals](/assets/images/python_fundamentals.png)
 
 ## 💡 Why Python?
 Python is not just for AI — it’s great for beginners too!  
