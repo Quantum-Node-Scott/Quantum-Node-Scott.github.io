@@ -537,6 +537,7 @@ An OS manages computer hardware, software resources, and provides common service
 Linux is preferred in AI for its stability, flexibility, and powerful command-line utilities.
 
 ### 📌 Essential Linux Commands:
+
 ```bash
 ls          # List files and directories
 cd          # Change directory
@@ -550,6 +551,7 @@ top/htop    # Monitor processes and resources
 ## 🐍 7. Python Environment Setup for AI Projects
 
 Efficiently manage dependencies using virtual environments.
+
 ```python
 # Create and activate virtual environment
 python -m venv ai_env
@@ -659,6 +661,7 @@ ipconfig /all
 ---
 
 ## 🛠️ 6. Essential Networking Commands
+
 ```bash
 ping example.com        # Check connectivity
 traceroute example.com  # Trace packet path (Linux/MacOS)
@@ -691,6 +694,7 @@ def preprocess_data(data):
 ```
 
 ### 📌 Version Control with Git
+
 ```bash
 git init                  # Initialize repository
 git add .                 # Stage files
