@@ -14,7 +14,7 @@ Hello again! Welcome to my new series on **fundamental computer science** essent
 4️⃣ Computer system
 5️⃣ Network & Software Engeenering
 
-![Data Structures Fundamentals](/assets/images/computer_science_fundamentals.png)
+![computer science fundamental](/assets/images/computer_science_fundamentals.png)
 
 ---
 
@@ -89,8 +89,8 @@ print(user["name"])  # Alice
 ```
 
 ### 📌 Set { }: Unordered & Unique
-	•	Strength: Fast membership testing (O(1)).
-	•	Weakness: No ordering or indexing.
+•	Strength: Fast membership testing (O(1)).
+•	Weakness: No ordering or indexing.
 
 ```python
 unique_fruits = {"apple", "banana", "apple"}
