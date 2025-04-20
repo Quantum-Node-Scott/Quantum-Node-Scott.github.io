@@ -8,18 +8,19 @@ author_profile: false
 
 # 🗃 Mastering Computer Sicence: Your First Step to Efficient AI Coding
 
-Hello again! Welcome to my new series on **fundamental computer science** essential for AI. This week, guided by our excellent tutor, I explored the essentials of
+<<<<<<< HEAD
+Hello again! Welcome to my new series on **fundamental computer science** essential for AI. This week, guided by our excellent tutor, I explored the essentials of 
 1️⃣ Data structures
 2️⃣ Algorithms
 3️⃣ Database
-4️⃣ Computer system & Operation system
+4️⃣ Computer system
 5️⃣ Network & Software Engeenering
 
 ![Data Structures Fundamentals](/assets/images/computer_science_fundamentals.png)
 
 ---
 
-# Data Structures
+# 1️⃣ Data Structures
 ## 💡 Why Data Structures Matter in AI?
 
 Efficient **data storage** and **retrieval** is vital for AI. Choosing the right data structure helps:
@@ -71,8 +72,8 @@ print(f"O(1) calculation took: {time.time() - start:.5f} seconds")
 ## 📚 2. Core Python Data Structures: Lists, Dicts, and Sets
 
 ### 📌 List [ ]: Ordered & Mutable
-	•	Strength: Fast indexing (O(1)), sequential access.
-	•	Weakness: Slow searching/insertion/deletion in the middle (O(n)).
+•	Strength: Fast indexing (O(1)), sequential access.
+•	Weakness: Slow searching/insertion/deletion in the middle (O(n)).
 
 ```python
 fruits = ["apple", "banana", "cherry"]
@@ -81,8 +82,8 @@ print(fruits[1])  # banana
 ```
 
 ### 📌 Dictionary { }: Key-Value pairs
-	•	Strength: Fast key-based lookups (O(1) on average).
-	•	Weakness: Memory usage.
+•	Strength: Fast key-based lookups (O(1) on average).
+•	Weakness: Memory usage.
 
 ```python
 user = {"name": "Alice", "age": 25}
@@ -157,25 +158,9 @@ heapq.heappush(heap, 0)
 print(heapq.heappop(heap))  # 0
 ```
 
----
-
-### 🎯 Wrap-Up: Choosing the Right Structure
-
-Selecting the right data structure significantly impacts the performance of AI applications. Remember:
-
-Use-case	Recommended Structure
-Fast index access, ordered data	List [ ]
-Fast key-value access	Dictionary { }
-Unique items, fast lookup	Set { }
-Numerical computations	NumPy arrays
-Structured data analysis	Pandas DataFrame
-Counting, quick insert/remove	Collections module
-Priority-based operations	Heapq module
-
-
 --- 
 
-# Algorithms
+# 2️⃣ Algorithms
 ## 💡 Why Algorithms in AI?
 
 Algorithms form the logic of AI systems. They help:
@@ -303,17 +288,9 @@ x = np.array([1, 2, 3, 4, 5])
 y = np.array([2.2, 2.8, 4.5, 3.7, 5.5])
 print(gradient_descent(x, y))
 ```
----
-
-### 🎯 Wrap-Up: Algorithm Selection & Efficiency
-
-Understanding and selecting the right algorithm is crucial. Remember:
-	•	Clearly understand the problem.
-	•	Evaluate available algorithms.
-	•	Consider trade-offs between complexity and efficiency.
 
 ---
-# Database
+# 3️⃣ Database
 ## 💡 Why Databases Matter in AI?
 
 In AI, efficient data storage, retrieval, and management are essential. Databases help you:
@@ -468,20 +445,7 @@ Example Hybrid Architecture:
 	•	Pinecone/Milvus: Embeddings for semantic search.
 
 
----
-### 🎯 Wrap-Up: Choosing the Right Database
-
-Choosing the correct database significantly boosts your AI project efficiency and scalability. Quick guide:
-
-Scenario	Recommended Database
-Structured data, transactions	Relational DB (SQL)
-Large-scale, real-time data	NoSQL (MongoDB, Redis)
-Semantic search, embeddings	Vector DB (Pinecone, Milvus)
-
----
-
-
-# Computer Science
+# 4️⃣ Computer Science 
 ## 💡 Why Computer Architecture & OS in AI?
 
 Understanding computer architecture and operating systems helps:
@@ -619,19 +583,7 @@ nvidia-smi
 
 ---
 
-### 🎯 Wrap-Up: Leveraging Architecture & OS in AI
-
-Understanding computer architecture and OS is vital for optimizing AI workloads. Quick summary:
-
-Task	Recommended Tools & Concepts
-Complex Sequential Tasks	CPU
-Parallel, Intensive Tasks (Deep Learning)	GPU
-Reducing Model Size & Speeding Up Inference	Quantization
-Efficient System & Resource Management	Linux OS & utilities
-
----
-
-# Mastering Networking & Software Engineering
+# 5️⃣ Networking & Software Engineering
 ## 💡 Why Networking & Software Engineering in AI?
 
 Effective networking and software engineering practices enable you to:
@@ -771,16 +723,3 @@ Google's **Gemini API** enables you to easily add conversational AI capabilities
 
 
 ---
-
-### 🎯 Wrap-Up: Effective Networking & Software Engineering in AI
-
-Networking and software engineering skills significantly enhance your ability to deploy and manage scalable, robust AI solutions.
-
-Quick reference:
-
-Task	Recommended Tools & Practices
-Reliable Data Transmission	TCP protocol
-Real-time Data Streaming	UDP protocol
-Code Version Management	Git
-
-
