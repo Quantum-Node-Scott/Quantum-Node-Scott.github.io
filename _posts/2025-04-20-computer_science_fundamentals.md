@@ -635,6 +635,7 @@ ipconfig
 ## 🖥️ 4. MAC Addresses
 - Unique physical address assigned to network hardware.
 - Unlike IP addresses, MAC addresses are fixed identifiers for devices.
+
 ```bash
 # Check MAC address on Linux/MacOS
 ifconfig | grep ether
