@@ -40,8 +40,6 @@ Data structures are ways to store, organize, and manage data for efficient acces
 - **Abstract Data Types (ADTs):** Logical structure without specifying exact implementation.
 - **Concrete Implementations:** Actual implementation using a specific language (like Python).
 
----
-
 ### 📌 Understanding Complexity (Big-O notation)
 
 - **Time Complexity:** How processing time grows with input size.
@@ -63,8 +61,8 @@ print(f"O(n) loop took: {time.time() - start:.5f} seconds")
 start = time.time()
 result = (1000000 * (1000000 + 1)) // 2
 print(f"O(1) calculation took: {time.time() - start:.5f} seconds")
-
 ```
+
 ---
 
 ## 📚 2. Core Python Data Structures: Lists, Dicts, and Sets
@@ -95,8 +93,8 @@ print(user["name"])  # Alice
 ```python
 unique_fruits = {"apple", "banana", "apple"}
 print(unique_fruits)  # {'banana', 'apple'}
-
 ```
+
 ---
 
 ## 🧑‍💻 3. Data Structures in Practice: NumPy & Pandas
@@ -127,7 +125,6 @@ print(df[df["age"] > 25])
 ```
 
 ---
-
 
 ## 🚀 4. Advanced Python Data Structures: Collections & Heapq
 
@@ -212,7 +209,6 @@ def binary_search(arr, target):
 
 print(binary_search([1,2,3,4,5], 4))  # Output: 3
 ```
----
 
 ### 📌 Sorting Algorithms
 
@@ -244,8 +240,8 @@ def quick_sort(arr):
 
 data = [64, 34, 25, 12, 22]
 print(quick_sort(data))  # Output: [12, 22, 25, 34, 64]
-
 ```
+
 ---
 
 ## 📈 3. Algorithmic Thinking in Practice
@@ -257,7 +253,6 @@ Finding elements quickly (sorted data)	Binary Search	Efficiency O(log n)
 Finding elements in unsorted data	Linear Search	Simple implementation
 Fast general-purpose sorting	Quick Sort	Efficient average-case O(n log n)
 Educational/simple sorting	Bubble Sort	Easy to understand
-
 
 ---
 
@@ -287,6 +282,7 @@ print(gradient_descent(x, y))
 ```
 
 ---
+
 # 3️⃣ Database
 ## 💡 Why Databases Matter in AI?
 
@@ -335,6 +331,7 @@ A **database** is a structured and organized collection of data stored electroni
 ```sql
 SELECT * FROM users WHERE age > 30;
 ```
+
 ---
 
 ### 📌 NoSQL Databases
@@ -350,7 +347,6 @@ MongoDB Example:
 // MongoDB query example:
 db.users.find({ "age": { "$gt": 30 } });
 ```
-
 
 ---
 
@@ -441,6 +437,7 @@ Example Hybrid Architecture:
 - MongoDB: Logs, session management, real-time data.
 - Pinecone/Milvus: Embeddings for semantic search.
 
+---
 
 # 4️⃣ Computer Science 
 ## 💡 Why Computer Architecture & OS in AI?
@@ -517,8 +514,8 @@ import numpy as np
 float_values = np.array([0.12345, 1.23456], dtype=np.float32)
 quantized_values = np.round(float_values, decimals=2)
 print(quantized_values)  # Output: [0.12, 1.23]
-
 ```
+
 ---
 
 ## 🐧 5. Operating Systems and Linux Basics
@@ -548,7 +545,6 @@ rm          # Remove files or directories
 top/htop    # Monitor processes and resources
 ```
 
-
 ---
 
 ## 🐍 7. Python Environment Setup for AI Projects
@@ -577,7 +573,6 @@ Use Linux utilities to monitor and optimize resources:
 nvidia-smi
 ```
 
-
 ---
 
 # 5️⃣ Networking & Software Engineering
@@ -594,7 +589,6 @@ Let's dive into networking basics, essential protocols, software engineering pra
 ---
 
 ## 🌐 1. Networking Fundamentals
-
 ### 📌 What is a Network?
 
 A network connects two or more devices (computers, smartphones, IoT devices) allowing them to communicate and share data.
@@ -670,7 +664,6 @@ traceroute example.com  # Trace packet path (Linux/MacOS)
 tracert example.com     # Trace packet path (Windows)
 ```
 
-
 ---
 
 ## ⚙️ 7. Software Engineering Basics for AI
@@ -717,6 +710,5 @@ Finally, let's see how to leverage modern tools to create interactive AI service
 ### 📌 Why Gemini API?
 
 Google's **Gemini API** enables you to easily add conversational AI capabilities to your apps, offering high-quality natural language understanding and generation.
-
 
 ---
