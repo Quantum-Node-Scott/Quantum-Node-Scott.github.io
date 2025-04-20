@@ -7,8 +7,6 @@ author_profile: false
 ---
 
 # 🗃 Mastering Computer Sicence: Your First Step to Efficient AI Coding
-
-<<<<<<< HEAD
 Hello again! Welcome to my new series on **fundamental computer science** essential for AI. This week, guided by our excellent tutor, I explored the essentials of 
 1️⃣ Data structures
 2️⃣ Algorithms
