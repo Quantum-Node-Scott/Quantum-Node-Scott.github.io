@@ -108,7 +108,6 @@ print(unique_fruits)  # {'banana', 'apple'}
 Efficient numerical computation for large arrays.
 
 ```python
-
 import numpy as np
 
 arr = np.array([1, 2, 3, 4, 5])
@@ -265,9 +264,9 @@ Educational/simple sorting	Bubble Sort	Easy to understand
 ## 🚀 4. Algorithms in AI Projects
 
 Algorithms in real-world AI tasks include:
-	•	Gradient Descent: Optimization algorithm in ML (O(n) per iteration).
-	•	Dynamic Programming: Used in reinforcement learning and NLP tasks.
-	•	Hashing Algorithms: For data retrieval and security.
+•	Gradient Descent: Optimization algorithm in ML (O(n) per iteration).
+•	Dynamic Programming: Used in reinforcement learning and NLP tasks.
+•	Hashing Algorithms: For data retrieval and security.
 
 ### Simplified Gradient Descent Example:
 ```python
@@ -339,9 +338,9 @@ SELECT * FROM users WHERE age > 30;
 ---
 
 ### 📌 NoSQL Databases
-	•	Flexible schema, high scalability, and performance.
-	•	Suitable for large-scale, real-time, and unstructured data.
-	•	Examples: MongoDB, Redis, Cassandra.
+•	Flexible schema, high scalability, and performance.
+•	Suitable for large-scale, real-time, and unstructured data.
+•	Examples: MongoDB, Redis, Cassandra.
 
 AI Use-cases: Logs, caching, real-time data processing, user profiles.
 
@@ -356,9 +355,9 @@ db.users.find({ "age": { "$gt": 30 } });
 ---
 
 ### 📌 Vector Databases
-	•	Optimized for efficient vector similarity searches.
-	•	Ideal for storing and retrieving embedding vectors.
-	•	Examples: Pinecone, Milvus, FAISS.
+•	Optimized for efficient vector similarity searches.
+•	Ideal for storing and retrieving embedding vectors.
+•	Examples: Pinecone, Milvus, FAISS.
 
 AI Use-cases: Document/image embeddings, semantic search (e.g., Retrieval Augmented Generation, RAG).
 
@@ -373,10 +372,10 @@ results = vector_db.search(query_embedding, top_k=5)
 ## 📝 3. SQL Basics for AI
 
 ### 📌 Core SQL Commands
-	•	SELECT: Retrieve data.
-	•	INSERT: Add new data.
-	•	UPDATE: Modify existing data.
-	•	DELETE: Remove data.
+•	SELECT: Retrieve data.
+•	INSERT: Add new data.
+•	UPDATE: Modify existing data.
+•	DELETE: Remove data.
 
 ```sql
 -- Basic SELECT
@@ -433,14 +432,14 @@ conn.close()
 ## 🚀 5. Database Architectures in AI Projects
 
 Real-world AI projects typically utilize a hybrid database architecture:
-	•	Relational DB (SQL): Structured data, metadata storage.
-	•	NoSQL DB: Large-scale, real-time, or unstructured data handling.
-	•	Vector DB: Semantic retrieval and AI model data (embeddings).
+•	Relational DB (SQL): Structured data, metadata storage.
+•	NoSQL DB: Large-scale, real-time, or unstructured data handling.
+•	Vector DB: Semantic retrieval and AI model data (embeddings).
 
 Example Hybrid Architecture:
-	•	PostgreSQL: User data, transactions.
-	•	MongoDB: Logs, session management, real-time data.
-	•	Pinecone/Milvus: Embeddings for semantic search.
+•	PostgreSQL: User data, transactions.
+•	MongoDB: Logs, session management, real-time data.
+•	Pinecone/Milvus: Embeddings for semantic search.
 
 
 # 4️⃣ Computer Science 
@@ -529,10 +528,10 @@ print(quantized_values)  # Output: [0.12, 1.23]
 An OS manages computer hardware, software resources, and provides common services for programs.
 
 ### 📌 Core OS Functions:
-	•	Process and thread management
-	•	Memory management
-	•	Device management
-	•	File system management
+•	Process and thread management
+•	Memory management
+•	Device management
+•	File system management
 
 ---
 
@@ -570,8 +569,8 @@ pip install numpy pandas torch
 ## 🚀 8. Resource Monitoring and Optimization
 
 Use Linux utilities to monitor and optimize resources:
-	•	htop: Real-time CPU and memory usage.
-	•	nvidia-smi: Monitor GPU utilization for AI tasks.
+•	htop: Real-time CPU and memory usage.
+•	nvidia-smi: Monitor GPU utilization for AI tasks.
 
 ```bash
 # Check GPU usage
@@ -640,8 +639,8 @@ ipconfig
 ---
 
 ## 🖥️ 4. MAC Addresses
-	•	Unique physical address assigned to network hardware.
-	•	Unlike IP addresses, MAC addresses are fixed identifiers for devices.
+•	Unique physical address assigned to network hardware.
+•	Unlike IP addresses, MAC addresses are fixed identifiers for devices.
 ```bash
 # Check MAC address on Linux/MacOS
 ifconfig | grep ether
@@ -655,12 +654,12 @@ ipconfig /all
 ## 🔗 5. TCP/IP Protocol Suite
 
 ### 📌 TCP (Transmission Control Protocol)
-	•	Ensures reliable data transmission.
-	•	Example: Web browsing, file transfers.
+•	Ensures reliable data transmission.
+•	Example: Web browsing, file transfers.
 
 ### 📌 UDP (User Datagram Protocol)
-	•	Faster but less reliable.
-	•	Example: Video streaming, gaming.
+•	Faster but less reliable.
+•	Example: Video streaming, gaming.
 
 ---
 
@@ -679,9 +678,9 @@ tracert example.com     # Trace packet path (Windows)
 Good software engineering ensures AI solutions are maintainable, scalable, and reliable.
 
 ### 📌 Key Principles:
-	•	Modular design (reuse & maintainability).
-	•	Version control systems (Git).
-	•	Continuous Integration & Continuous Deployment (CI/CD).
+•	Modular design (reuse & maintainability).
+•	Version control systems (Git).
+•	Continuous Integration & Continuous Deployment (CI/CD).
 
 ---
 
