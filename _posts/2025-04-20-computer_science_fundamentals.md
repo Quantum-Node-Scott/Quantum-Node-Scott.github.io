@@ -8,9 +8,14 @@ author_profile: false
 
 # 🗃 Mastering Computer Sicence: Your First Step to Efficient AI Coding
 
-Hello again! Welcome to my new series on **fundamental computer science** essential for AI. This week, guided by our excellent tutor, I explored the essentials of **Data structures, Algorithms, Database, Computer system, Operation system, Network and Software Engeenering **.
+Hello again! Welcome to my new series on **fundamental computer science** essential for AI. This week, guided by our excellent tutor, I explored the essentials of
+1️⃣ Data structures
+2️⃣ Algorithms
+3️⃣ Database
+4️⃣ Computer system & Operation system
+5️⃣ Network & Software Engeenering
 
-![Data Structures Fundamentals](/assets/images/computer_science_fundamentals.jpg)
+![Data Structures Fundamentals](/assets/images/computer_science_fundamentals.png)
 
 ---
 
