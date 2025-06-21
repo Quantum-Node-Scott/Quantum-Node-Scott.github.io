@@ -1,212 +1,144 @@
 ---
 layout: single
-title: "#6 Git Fundamentals for AI"
+title: "#7 Deep Learning & PyTorch Overview"
 categories: Bootcamp
 tag: [패스트캠퍼스, 패스트캠퍼스AI부트캠프, 업스테이지패스트캠퍼스, UpstageAILab, 국비지원, 패스트캠퍼스업스테이지에이아이랩, 패스트캠퍼스업스테이지부트캠프]
 author_profile: false
 ---
 
 
-# 🌀 Mastering Git: Essential Concepts and Commands for Every Developer
+# Introduction to Deep Learning
 
-Hello again! In this post, let’s master the basics of **Git**, the most popular version control system used by developers worldwide.  
-Whether you’re working solo or collaborating on large projects, Git is an essential tool for modern software development.
+In this post, we’ll break down the fundamentals of deep learning — the most powerful tool in modern AI. You’ll understand the components that make up deep learning systems, how models learn, and the key mechanisms behind neural network training.
 
-![Git Fundamentals](/assets/images/git_fundamentals.png)
+![PyTorch](/assets/images/pytorch.png)
 
----
+## 1. What is Deep Learning?
 
-## 💡 Why Git Matters?
+Deep learning (DL) is a subfield of machine learning (ML), which in turn is a branch of artificial intelligence (AI).
 
-Git is a **distributed version control system** that lets you:
+- AI: Intelligence exhibited by machines
 
-- Track changes to your codebase efficiently
-- Collaborate with others without conflicts
-- Safely experiment with new features using branches
-- Restore any previous state of your project
+- ML: Algorithms that improve through data
 
----
+- DL: Neural network-based models that automatically learn hierarchical representations
 
-## 📚 1. What is a Git Repository?
+> DL models can perform complex tasks such as image classification, language translation, and game playing, powered by multiple layers of computation.
 
-A **repository (repo)** is a storage space for your project’s files and all their change history.
 
-- **Local Repository**: Lives on your own computer.
-- **Remote Repository**: Hosted on a server (like GitHub, GitLab) for collaboration.
 
----
+## 2. Components of a Deep Learning Pipeline
 
-## 🏗️ 2. Git Structure: How Does It Work?
+A successful deep learning system is built on five key components:
+- **Data**: Examples include MNIST, CIFAR-10, or text corpora. The format and quality of data depend on the task.
+- **Model**: Transforms inputs into desired outputs. Examples include MLP, CNN, RNN.
+- **Loss Function**: Measures how well the model is performing (e.g., MSE, Cross-Entropy).
+- **Optimization Algorithm**: Adjusts model parameters to minimize loss (e.g., SGD, Adam).
+- **Regularization Techniques**: Prevent overfitting (e.g., Dropout, L2 Regularization).
 
-- **Working Directory**: Where you make changes to files.
-- **Staging Area (Index)**: Where you prepare changes for the next commit.
-- **Repository**: Where committed versions (history) are saved permanently.
+```python
+import torch.nn as nn
 
-```bash
-graph LR
-    WD[Working Directory] --> SA[Staging Area]
-    SA --> REPO[Repository]
-```
-
----
-
-## 🛠️ 3. Most Useful Git Commands
-
-▶️ Creating & Cloning Repositories
-
-```bash
-git init               # Initialize a new Git repository
-git clone <URL>        # Clone an existing remote repository
-```
-
-▶️ Tracking and Saving Changes
-
-```bash
-git status             # Check the current state of your repo
-git add filename       # Stage a specific file
-git add .              # Stage all changed files
-git commit -m "msg"    # Commit staged changes with a message
-```
-
-▶️ Viewing History & Changes
-
-```bash
-git log                # View commit history
-git diff               # Show file differences between commits or staging
-```
-
-▶️ Working with Branches
-
-```bash
-git branch                 # List all branches
-git branch new-branch      # Create a new branch
-git checkout new-branch    # Switch to a branch
-git merge branch-name      # Merge another branch into current one
-git branch -d branch-name  # Delete a branch
-```
-
-▶️ Working with Remote Repositories
-
-```bash
-git remote add origin <URL>  # Add a remote repository
-git push origin branch-name  # Push your branch to remote
-git pull origin branch-name  # Pull updates from remote
-git clone <URL>              # Clone a remote repository
+# Example: Dropout Layer with 0.3 ratio
+nn.Dropout(p=0.3)
 ```
 ---
 
-## 🧩 4. Basic Git Collaboration Workflow
-1.	Clone the remote repository:
+## 3. How Models Learn: From Forward to Backward
+Deep learning models learn through a two-step process:
+1. **Forward Pass**: Input → hidden layers → output. Predictions are made.
+2. **Backward Pass (Backpropagation)**: The model calculates gradients using chain rule to update weights.
 
-```bash
-git clone <repo-url>
+Key concepts include:
+- **Computational Graph**: Represents operations as nodes and edges.
+- **Gradient**: Partial derivative of loss with respect to parameters.
+- **Chain Rule**: Used to propagate loss backward through layers.
+
+```python
+# Pseudocode for simple backward pass
+loss.backward()       # Automatically computes gradients
+optimizer.step()      # Updates model parameters
 ```
-
-2.	Create and switch to a new feature branch:
-
-```bash
-git branch feature/my-feature
-git checkout feature/my-feature
-```
-
-3.	Make changes, stage, and commit:
-
-``` bash
-git add .
-git commit -m "Describe your changes"
-```
-
-4.	Push your branch to the remote repository:
-
-```bash
-git push origin feature/my-feature
-```
-
-5.	Open a Pull/Merge Request (on GitHub, GitLab, etc.)
-- Request review, discuss changes, and merge!
 
 ---
 
-### 📚 5. The Steps of GitHub Flow
+##  4. Backpropagation in Action
 
-1️⃣ Create a Branch
+To train a neural network, we need to compute the loss gradient for each parameter. This is done efficiently via backpropagation:
 
-Start each new feature or fix by creating a branch from `main`.
+Uses the chain rule to break complex derivatives into manageable steps
 
-```bash
-git checkout main
-git pull origin main
-git checkout -b feature/your-feature
-```
----
+Allows updating all weights via Stochastic Gradient Descent (SGD) or similar methods
 
-2️⃣ Make Commits
+```python
+import torch.optim as optim
 
-Work on your branch and make small, logical commits. Each commit should represent a single purpose or change.
+model = MyModel()
+optimizer = optim.SGD(model.parameters(), lr=0.01)
 
-```bash
-git add .
-git commit -m "Add signup form UI"
-```
----
-
-3️⃣ Open a Pull Request (PR)
-
-When your work is ready, push your branch to GitHub and open a Pull Request (PR).
-Describe what you changed and why.
-
-```bash
-git push origin feature/your-feature
+for batch in dataloader:
+    optimizer.zero_grad()
+    output = model(batch)
+    loss = criterion(output, target)
+    loss.backward()
+    optimizer.step()
 ```
 
-On GitHub, click “Compare & pull request” to open a PR.
+## 5. Common Architectures: MLP, CNN, RNN
 
----
+- **MLP (Multi-layer Perceptron)**: Basic feedforward network
+```python
+import torch.nn as nn
 
-4️⃣ Discuss & Review Code
+class MLP(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.layers = nn.Sequential(
+            nn.Linear(784, 128),
+            nn.ReLU(),
+            nn.Linear(128, 64),
+            nn.ReLU(),
+            nn.Linear(64, 10)
+        )
 
-Collaborate with teammates—use comments for questions, suggestions, or clarifications.
-Make any requested changes by committing again on your branch.
-Reviewers approve or request changes before merging.
+    def forward(self, x):
+        return self.layers(x)
+```
+- **CNN (Convolutional Neural Network)**: Effective for image data
+```python
+# Example CNN Layer
+nn.Conv2d(in_channels=1, out_channels=32, kernel_size=3, stride=1, padding=1)
+```
+- **RNN (Recurrent Neural Network)**: Used for sequential data like time series or text
+```python
+class SimpleRNN(nn.Module):
+    def __init__(self, input_size, hidden_size, num_layers, output_size):
+        super().__init__()
+        self.rnn = nn.RNN(input_size, hidden_size, num_layers, batch_first=True)
+        self.fc = nn.Linear(hidden_size, output_size)
 
----
-
-5️⃣ Deploy & Test
-
-Optionally, deploy the branch to a staging/testing environment.
-Automated tests (CI) and manual checks can run on PRs to catch issues early.
-
----
-
-6️⃣ Merge to Main
-
-After review and testing, merge the PR into the main branch (often using “Squash and merge” or “Rebase and merge” for a clean history).
-
-```bash
-git checkout main
-git pull origin main
-git merge feature/your-feature
-git push origin main
+    def forward(self, x):
+        out, _ = self.rnn(x)
+        out = self.fc(out[:, -1, :])  # Use last time step
+        return out
 ```
 
-Or simply merge from the GitHub UI.
+
+##  6. Enhancing Learning: Techniques and Tricks
+- **Dropout**: Randomly deactivates neurons during training
+
+- **Normalization**: Ensures stable and fast training (e.g., BatchNorm)
+
+- **Regularization**: Penalizes model complexity to prevent overfitting
 
 ---
 
-7️⃣ Deploy to Production
+## Summary: What You Should Remember
 
-Continuously deliver by deploying the latest main branch to production.
+1. Deep learning builds on data, model, loss, optimization, and regularization
 
----
+2. Forward and backward passes are essential to learning
 
-🔑 Best Practices for GitHub Flow
-- Always branch from main: Keep main stable, deployable, and up to date.
-- Commit small, meaningful changes: Easier to review and debug.
-- Write clear PR descriptions: Explain the context, not just the code.
-- Use automated CI/CD: Test and deploy automatically on each push or merge.
-- Delete merged branches: Keep your repo tidy.
+3. Backpropagation enables gradient-based learning
 
-
-
-
-
+4. Various architectures and techniques help solve different AI problems
